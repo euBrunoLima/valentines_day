@@ -5,6 +5,7 @@ import DiasJuntos from "../layouts/DiasJuntos";
 import Mensagem from "../layouts/Mensagem";
 import Capivara from "../layouts/Capivara";
 import Temporizador from "../layouts/Temporizador";
+import Footer from "../layouts/Footer";
 
 
 function HomePage() {
@@ -18,8 +19,10 @@ function HomePage() {
                 mensagem_p1={"Mais do que uma data, o Dia dos Namorados me faz lembrar o quanto sou feliz por ter você ao meu lado. Cada momento contigo, por mais simples que seja, se torna especial só por estar com você."}
                 mensagem_p2={"Obrigado(a) por ser meu porto seguro, meu riso fácil e meu lugar favorito no mundo. Que a gente continue cultivando esse amor todos os dias."}
             />
-            
             <Capivara />
+            <Footer/>
+            
+
         </ContainerLayout>
     );
 }
