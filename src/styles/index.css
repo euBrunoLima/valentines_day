@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Delius", cursive;
+}
+body{
+    background-color: black;
+    color: #e2e2e2;
+}
+#root {
+  width: 100%;
+  max-width: 450px;
+  min-height: 100vh;
+  margin: 0 auto;
+}

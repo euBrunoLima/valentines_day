@@ -1,0 +1,26 @@
+.dias_juntos_container{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 1rem;
+}
+.dias_juntos_container > h1{
+    font-size: 1.1rem;
+}
+
+.dias_juntos_container > p{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+
+}
+
+.dias_juntos_container > hr{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 1.2rem;
+    border: 1px solid #cccccc62;
+}

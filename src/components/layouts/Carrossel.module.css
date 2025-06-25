@@ -1,0 +1,10 @@
+.carrossel_container {
+    width: 80%;
+    margin: 0 auto;
+    height: 55vh;
+    border-radius: 16px;
+    background-color: azure;
+    color: #000;
+}
+
+

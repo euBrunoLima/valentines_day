@@ -1,0 +1,81 @@
+/* HTML: <div class="inverted-radius"></div> */
+.inverted_radius {
+  --r: 20px; /* the radius */
+  --s: 30px; /* size of inner curve */
+  --x: 20px; /* horizontal offset (no percentage) */
+  --y: 10px; /* vertical offset (no percentage) */
+  
+  max-width: 250px;
+  margin: 1.5rem 1rem 1.5rem 1rem;
+  border: 3.8px solid #000;
+  aspect-ratio: 1;
+  /* background: #ff0081; */
+  border-radius: var(--r);
+  --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
+  --_g:conic-gradient(at calc(100% - var(--r)) var(--r),#0000 25%,#000 0);
+  --_d:(var(--s) + var(--r));
+  mask:
+    calc(100% - var(--_d) - var(--x)) 0 var(--_m),
+    100% calc(var(--_d) + var(--y)) var(--_m),
+    radial-gradient(var(--s) at 100% 0,#0000 99%,#000 calc(100% + 1px)) 
+     calc(-1*var(--r) - var(--x)) calc(var(--r) + var(--y)),
+    var(--_g) calc(-1*var(--_d) - var(--x)) 0,
+    var(--_g) 0 calc(var(--_d) + var(--y));
+  mask-repeat: no-repeat;
+}
+
+
+
+.capivara_container {
+    position: relative;
+    width: 90%;
+    min-height: 298px;
+    margin: 1.8rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background: linear-gradient(135deg, #ff0081 0%, #ff8c00 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.capivara_container .capivara_images{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100%;
+    justify-content: start;
+    align-items: center;
+    overflow-x: scroll;
+    border-left: 4px solid #000;
+    background: linear-gradient(135deg, #ff0081 0%, #ff0051 100%);
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* Internet Explorer e Edge antigo */
+}
+.capivara_images::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.capivara_container .capivara_circle{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    height: 100%;
+    padding-right: 10px;
+    gap: 10px;
+    top: 4px;
+    left: 3px;
+}
+
+.capivara_container .capivara_circle > span{
+    display: block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+}
+
+

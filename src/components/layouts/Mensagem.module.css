@@ -1,0 +1,27 @@
+.mensagem_container{
+    padding: 0 21px;
+    margin-top: 1.8rem;
+}
+.mensagem_container h1{
+    font-size: 1rem;
+    text-align: start;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.paragrafo_romantico p{
+    text-indent: 1.5rem; /* ou 20px */
+    line-height: 1.4;  /* opcional: melhora a leitura */
+    margin-bottom: 1rem; /* espaço entre os parágrafos */
+    text-align: justify;
+    font-size: .96rem;
+}
+.paragrafo_romantico p:nth-child(3) {
+    margin-bottom: .5rem;
+    text-indent: 0;
+}
+.paragrafo_romantico p:nth-child(4) {
+    font-style: italic;
+    text-indent: 0;
+
+}
