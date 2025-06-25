@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.footer > span > a{
+    color: #ff0081;
+    text-decoration: none;
+}

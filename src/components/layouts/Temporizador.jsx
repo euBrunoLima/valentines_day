@@ -110,13 +110,13 @@ export default function Temporizador() {
   }, []);
 
   return (
-    <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap",flexShrink: 100 }}>
+    <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap",flexShrink: 100, maxHeighteight: "500px"}}>
       <ProgressCircle value={time.years} max={10} unit="Anos" />
       <ProgressCircle value={time.months} max={12} unit="Meses" />
       <ProgressCircle value={time.days} max={30} unit="Dias" />
       <ProgressCircle value={time.hours} max={24} unit="Horas" />
-      <ProgressCircle value={time.minutes} max={60} unit="Minutos" />
-      <ProgressCircle value={time.seconds} max={60} unit="Segundos" />
+      {/* <ProgressCircle value={time.minutes} max={60} unit="Minutos" />
+      <ProgressCircle value={time.seconds} max={60} unit="Segundos" /> */}
     </div>
   );
 }
