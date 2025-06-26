@@ -29,8 +29,19 @@
 
 .fadeIn{
     opacity: 0;
-    animation: fadeIn 1s .8s ease-in-out forwards;
+    animation: fadeIn 1.5s .8s ease-in-out forwards;
 }
+
+.fadeIn_2{
+    opacity: 0;
+    animation: fadeIn 1s 1.2s ease-in-out forwards;
+}
+.fadeIn_3{
+    opacity: 0;
+    animation: fadeIn 1s 1.4s ease-in-out forwards;
+}
+
+
 
 @keyframes fadeIn {
     0%{
