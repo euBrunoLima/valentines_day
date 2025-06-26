@@ -1,8 +1,9 @@
 import styles from "./SpotifyPlayer.module.css";
+import anima from "../../styles/animations.module.css";
 
 function SpotifyPlayer() {
   return (
-    <div className={styles.spotifyPlayer}>
+    <div className={`${styles.spotifyPlayer} ${anima.slideInTop}`}>
       <iframe
         src="https://open.spotify.com/embed/track/1PQRwFvNM7xV65bIkHmDtx?utm_source=generator"
         frameBorder="0"

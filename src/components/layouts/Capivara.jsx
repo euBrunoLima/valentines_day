@@ -1,10 +1,10 @@
 import styles from './Capivara.module.css';
 import Button from './Button';
 import { useState } from 'react';
-import imagem1 from '../../../public/images/capivara1.gif';
-import imagem2 from '../../../public/images/capivara2.gif';
-import imagem3 from '../../../public/images/capivara3.gif';
-import imagem4 from '../../../public/images/capivara4.gif';
+import imagem1 from '../images/capivara1.gif';
+import imagem2 from '../images/capivara2.gif';
+import imagem3 from '../images/capivara3.gif';
+import imagem4 from '../images/capivara4.gif';
 
 
 

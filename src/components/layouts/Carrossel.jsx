@@ -1,8 +1,6 @@
-import React from 'react';
 import Slider from "react-slick";
 import styles from './Carrossel.module.css';
-
-
+import anima from '../../styles/animations.module.css';
 const Carrossel = () => {
     const settings = {
         dots: true,
@@ -16,13 +14,13 @@ const Carrossel = () => {
     };
 
     return (
-        <div className={styles.carrossel_container}>
+        <div className={`${styles.carrossel_container} ${anima.fadeIn}`}>
             <Slider className={styles.slider} {...settings}>
                 <div className={styles.carrossel_img}>
-                    <img src="https://i.pinimg.com/736x/83/1c/f4/831cf4ce9f3219fa33d92b01f7130ec3.jpg" alt="" />
+                    <img src="https://i.pinimg.com/736x/90/7a/6a/907a6acd620fd86565cb68b4191cf34a.jpg" alt="" />
                 </div>
                 <div className={styles.carrossel_img}>
-                    <img src="https://i.pinimg.com/736x/b4/98/40/b4984009c5ede76b9fc7a105ccdcaafc.jpg" alt="" />
+                    <img src="https://i.pinimg.com/736x/11/0d/b0/110db086a88ab4ae2963514a9aa7b2e9.jpg"alt="" />
                 </div>
                 <div className={styles.carrossel_img}>
                     <img src="https://i.pinimg.com/736x/01/77/67/0177675f0669045e06dc23df8c8d1692.jpg" alt="" />
