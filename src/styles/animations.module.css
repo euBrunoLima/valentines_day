@@ -1,6 +1,6 @@
 .slideInTop{
     opacity: 0;
-    animation: slideInTop .8s  ease-in-out forwards;
+    animation: slideInTop 1s ease-in-out forwards;
 
 }
 
@@ -29,7 +29,7 @@
 
 .fadeIn{
     opacity: 0;
-    animation: fadeIn 1.5s .8s ease-in-out forwards;
+    animation: fadeIn 1.5s .3s ease-in-out forwards;
 }
 
 .fadeIn_2{
