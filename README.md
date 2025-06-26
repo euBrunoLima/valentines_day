@@ -16,6 +16,7 @@ O site foi desenvolvido com foco principal em dispositivos móveis — especialm
 
  <img src="https://github.com/user-attachments/assets/d945d510-edf7-49da-97d1-9acac5382ba1" width="220" height="auto">
  <img src="https://github.com/user-attachments/assets/55d599d5-cfd0-4fa7-b2f4-1147ff2cd0c1" width="220" height="auto">
+ <img src="https://github.com/user-attachments/assets/3d55797a-9ed9-4105-86b2-2b992fc3e25a" width="220" height="auto">
 
 ## ✨ Funcionalidades
 
