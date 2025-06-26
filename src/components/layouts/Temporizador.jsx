@@ -1,7 +1,7 @@
 // src/components/Temporizador.jsx
 import React, { useEffect, useState } from "react";
 import ScrollReveal from 'scrollreveal';
-
+import anima from '../../styles/animations.module.css'
 // Componente de círculo individual personalizado
 const ProgressCircle = ({ value, max, unit }) => {
   const circumference = 2 * Math.PI * 45;
@@ -111,20 +111,22 @@ export default function Temporizador() {
   }, []);
 
     useEffect(() => {
-    // Aplica ScrollReveal para cada círculo com delay
     ScrollReveal().reveal('.progress-circle', {
       origin: 'bottom',
       distance: '40px',
       duration: 1000,
       easing: 'ease-in-out',
-      interval: 200, // <- diferença entre um círculo e outro
+      interval: 300,
       reset: false
     });
+
   }, []);
 
   return (
     <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap",flexShrink: 100, maxHeighteight: "500px"}}>
-      <ProgressCircle value={time.years} max={10} unit="Anos" />
+      <div className={anima.progress_circle_1}>
+        <ProgressCircle value={time.years} max={10} unit="Anos" />
+      </div>
       <ProgressCircle value={time.months} max={12} unit="Meses" />
       <ProgressCircle value={time.days} max={30} unit="Dias" />
       <ProgressCircle value={time.hours} max={24} unit="Horas" />

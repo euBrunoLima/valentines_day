@@ -81,3 +81,19 @@
         opacity: 1;
   }
 }
+
+.progress_circle_1{
+  opacity: 0; 
+  animation: revealFromBottom 1s .2s ease-in-out forwards;
+}
+
+@keyframes revealFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
